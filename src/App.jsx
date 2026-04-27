@@ -3,7 +3,6 @@ import { Navigate, Route, Routes, useParams } from 'react-router-dom'
 import LanguageTag from './components/LanguageTag'
 import ProjectCard from './components/ProjectCard'
 import { projectsBySlug, projectsData } from './data/projectsData'
-import logoImage from './assets/logo.png'
 
 const languages = [
   'English (C2)',
@@ -18,9 +17,8 @@ function HomePage() {
     <>
       <header className="sticky top-0 z-20 border-b border-border bg-page/95">
         <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-          <a href="#about" className="inline-flex items-center gap-3">
-            <img src={logoImage} alt="Omar Alhusayn logo" className="h-8 w-8 object-contain" />
-            <span className="text-sm font-semibold tracking-wide text-textStrong">omaralhusayn.com</span>
+          <a href="#about" className="text-sm font-semibold tracking-wide text-textStrong">
+            omaralhusayn.com
           </a>
           <ul className="flex items-center gap-5 text-sm font-medium text-textStrong">
             <li>
@@ -161,9 +159,8 @@ function ProjectPage() {
     <>
       <header className="sticky top-0 z-20 border-b border-border bg-page/95">
         <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-          <a href="/" className="inline-flex items-center gap-3">
-            <img src={logoImage} alt="Omar Alhusayn logo" className="h-8 w-8 object-contain" />
-            <span className="text-sm font-semibold tracking-wide text-textStrong">omaralhusayn.com</span>
+          <a href="/" className="text-sm font-semibold tracking-wide text-textStrong">
+            omaralhusayn.com
           </a>
           <a href="/#projects" className="text-sm font-medium text-textStrong hover:text-accent-deep">
             Back to Projects
