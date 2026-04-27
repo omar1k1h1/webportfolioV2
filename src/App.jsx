@@ -2,7 +2,6 @@ import { GitBranch, Link, Mail } from 'lucide-react'
 import { Navigate, Route, Routes, useParams } from 'react-router-dom'
 import LanguageTag from './components/LanguageTag'
 import ProjectCard from './components/ProjectCard'
-import logoSticker from './assets/logo.png'
 import { projectsBySlug, projectsData } from './data/projectsData'
 
 const languages = [
@@ -42,7 +41,7 @@ function HomePage() {
       </header>
 
       <main className="mx-auto w-full max-w-6xl px-5 pb-20 pt-16 sm:px-8 sm:pt-20">
-        <section id="about" className="relative scroll-mt-28 border-b border-border pb-16">
+        <section id="about" className="scroll-mt-28 border-b border-border pb-16">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent-deep">
             Portfolio
           </p>
@@ -50,30 +49,9 @@ function HomePage() {
             Omar Alhusayn
           </h1>
 
-          <figure className="pointer-events-none absolute right-0 top-0 hidden -translate-y-2 rotate-[8deg] rounded-2xl border border-accent/25 bg-white/90 p-2 shadow-[0_16px_28px_-16px_rgba(20,25,36,0.45)] backdrop-blur-[1px] sm:block">
-            <div className="absolute left-1/2 top-0 h-4 w-14 -translate-x-1/2 -translate-y-1/2 -rotate-6 rounded-sm border border-neutral-200/80 bg-neutral-100/90 shadow-sm" />
-            <img
-              src={logoSticker}
-              alt="Sticker logo"
-              className="h-20 w-20 rounded-xl object-cover"
-            />
-          </figure>
-
-          <figure className="pointer-events-none mt-5 inline-block rotate-3 rounded-xl border border-accent/25 bg-white/90 p-1.5 shadow-[0_14px_22px_-16px_rgba(20,25,36,0.45)] sm:hidden">
-            <img
-              src={logoSticker}
-              alt="Sticker logo"
-              className="h-14 w-14 rounded-lg object-cover"
-            />
-          </figure>
-
           <p className="mt-7 max-w-3xl text-base leading-8 sm:text-lg">
-            Hi, I&apos;m a passionate self-taught developer, currently exploring
-            low-level programming and robotics. I&apos;d love to be a full-stack:
-            Hardware, software, and everything in between. I enjoy building
-            projects that challenge me and allow me to learn new skills. I&apos;m
-            always open to collaboration and new opportunities, so feel free to
-            reach out!
+            I&apos;m 18, self-taught, and still learning every day while building
+            hardware and software projects.
           </p>
 
           <div className="mt-10">
